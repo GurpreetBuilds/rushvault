@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournament App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #05070c;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px 18px;
+      border-bottom: 1px solid #1c2638;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { color: #42a5ff; font-size: 20px; font-weight: bold; }
+    .balance {
+      background: #111b2b;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+    main { padding: 24px 18px 100px; }
+    h1 { font-size: 28px; }
+    .muted { color: #9ba8bb; line-height: 1.5; }
+    h2 { margin-top: 30px; font-size: 19px; }
+    .card {
+      background: #101725;
+      border: 1px solid #24344d;
+      border-radius: 14px;
+      padding: 18px;
+      margin: 14px 0;
+    }
+    .tag { color: #65b5ff; font-size: 12px; }
+    button {
+      width: 100%;
+      padding: 13px;
+      border: 0;
+      border-radius: 9px;
+      background: #1685f8;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    nav {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #0b101a;
+      border-top: 1px solid #24344d;
+      display: flex;
+      justify-content: space-around;
+      padding: 14px 2px;
+    }
+    nav span { color: #aab6c8; font-size: 11px; }
+    nav span:nth-child(3) { color: #42a5ff; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TOURNAMENT</div>
+    <div class="balance">Coins: 0</div>
+  </header>
+  <main>
+    <p class="tag">WELCOME TO THE ARENA</p>
+    <h1>Play. Compete. Rise.</h1>
+    <p class="muted">Your tournament journey starts here.</p>
+
+    <h2>MATCHES</h2>
+    <div class="card">
+      <span class="tag">FREE MATCH</span>
+      <h3>LONE WOLF 1V1</h3>
+      <p class="muted">Challenge another player.</p>
+      <button onclick="alert('Match details will be added next.')">View Match</button>
+    </div>
+    <div class="card">
+      <span class="tag">FREE MATCH</span>
+      <h3>CLASH SQUAD 1V1</h3>
+      <p class="muted">Enter the arena and compete.</p>
+      <button onclick="alert('Match details will be added next.')">View Match</button>
+    </div>
+
+    <h2>FREE MATCHES</h2>
+    <p class="muted">Upcoming tournaments will appear here.</p>
+  </main>
+  <nav>
+    <span>Account</span>
+    <span>Leaderboard</span>
+    <span>Home</span>
+    <span>Wallet</span>
+    <span>Support</span>
+  </nav>
+</body>
+</html>
