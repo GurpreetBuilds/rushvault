@@ -1115,4 +1115,13 @@ window.addEventListener("popstate",e=>{
 });
 initialiseApp();
 </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(registration => console.log('App is ready for offline!'))
+        .catch(err => console.log('SW failed', err));
+    });
+  }
+  </script>
 </body></html>
