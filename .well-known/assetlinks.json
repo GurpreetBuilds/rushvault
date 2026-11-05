@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.rushvault.app",
+    "sha256_cert_fingerprints": ["60:B2:1C:C4:0D:48:DD:2A:90:BD:DA:50:46:93:1E:1D:F1:35:8B:B3:C7:BD:7F:07:E7:21:2D:52:C8:05:23:23"]
+  }
+}]
