@@ -8,17 +8,24 @@
 <link rel="icon" type="image/png" href="icon-192.png">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-  body { background-color: #05020a; color: #fff; text-align: center; }
+  body { background-color: #05020a; color: #fff; text-align: center; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
   .container { max-width: 500px; margin: 0 auto; padding: 40px 20px; }
   .logo { width: 120px; height: 120px; border-radius: 20px; box-shadow: 0 0 20px #5a1ae5; border: 2px solid #5a1ae5; }
   .app-name { font-size: 32px; font-weight: 900; margin-top: 15px; text-transform: uppercase; color: #fff; }
   .tagline { font-size: 14px; color: #a79bb5; margin-top: 8px; margin-bottom: 30px; }
+  
   .download-btn { display: inline-block; background: linear-gradient(135deg, #6417ee, #3d00a8); color: white; text-decoration: none; padding: 16px 40px; font-size: 18px; font-weight: 800; border-radius: 50px; box-shadow: 0 4px 15px rgba(90, 26, 229, 0.5); border: 1px solid #854cff; margin-bottom: 15px; width: 100%; }
+  .download-btn:active { transform: scale(0.95); }
   .file-size { font-size: 12px; color: #a79bb5; margin-bottom: 30px; }
-  .stats { display: flex; justify-content: space-between; background: #100020; padding: 20px; border-radius: 15px; border: 1px solid #38204d; margin-bottom: 30px; }
-  .stat-box { display: flex; flex-direction: column; gap: 5px; }
-  .stat-value { font-size: 18px; font-weight: 800; color: #f6d56a; }
-  .stat-label { font-size: 11px; color: #a79bb5; text-transform: uppercase; }
+  
+  /* Fake stats hata kar real features daal diye hain */
+  .features { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+  .feature-box { background: #100020; padding: 15px; border-radius: 12px; border: 1px solid #38204d; display: flex; align-items: center; gap: 15px; text-align: left; }
+  .feature-icon { font-size: 24px; }
+  .feature-text h4 { color: #fff; font-size: 14px; margin-bottom: 4px; }
+  .feature-text p { color: #a79bb5; font-size: 12px; }
+  
+  .footer { font-size: 11px; color: #a79bb5; margin-top: 40px; line-height: 1.5; }
 </style>
 </head>
 <body>
@@ -27,14 +34,31 @@
   <h1 class="app-name">Rush Vault</h1>
   <p class="tagline">Play Free Fire Tournaments & Win Real Cash</p>
   
-  <!-- YAHAN APNA APK DOWNLOAD LINK DAALO -->
-  <a href="https://github.com/GurpreetBuilds/tournament-app/releases/download/v1.0/Rush_Vault.apk" class="download-btn">⬇ Download App Now</a>
-  <div class="file-size">APK Size: 4.2 MB | 100% Safe</div>
+  <!-- YAHAN APNA ASLI APK LINK DAALNA HAI -->
+  <a href="YAHAN_APNA_ASLI_LINK_PASTE_KARO" class="download-btn">⬇ Download App Now</a>
+  <div class="file-size">APK Size: 4.2 MB | 100% Safe & Secure</div>
 
-  <div class="stats">
-    <div class="stat-box"><span class="stat-value">₹10L+</span><span class="stat-label">Winnings</span></div>
-    <div class="stat-box"><span class="stat-value">4.8 ★</span><span class="stat-label">Rating</span></div>
-    <div class="stat-box"><span class="stat-value">50K+</span><span class="stat-label">Players</span></div>
+  <!-- Real Features (No fake ratings) -->
+  <div class="features">
+    <div class="feature-box">
+      <div class="feature-icon">🛡️</div>
+      <div class="feature-text">
+        <h4>100% Fair Play</h4>
+        <p>Strict anti-cheat system.</p>
+      </div>
+    </div>
+    <div class="feature-box">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-text">
+        <h4>Fast Withdrawals</h4>
+        <p>Get your winnings directly to UPI.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    By downloading, you agree to our <a href="#" style="color:#c4a4ff;">Terms</a> & <a href="#" style="color:#c4a4ff;">Privacy Policy</a>.<br><br>
+    © 2024 Rush Vault. All rights reserved.
   </div>
 </div>
 </body>
